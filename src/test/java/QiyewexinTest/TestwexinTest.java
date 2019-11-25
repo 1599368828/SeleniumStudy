@@ -17,10 +17,10 @@ public class TestwexinTest {
     driver.manage().window().maximize();
     driver.findElement(By.linkText("企业登录")).click();
 
-    driver.manage().addCookie(new Cookie("wwrtx.refid","3644356989912206"));
-    driver.manage().addCookie(new Cookie("wwrtx.sid","oBVP3UKSLgcmXYsno7x0bgfJmfBkFK2lf7yLKbbdiBoFiQSc6aP_iORayXdZU65X"));
+    driver.manage().addCookie(new Cookie("wwrtx.sid","oBVP3UKSLgcmXYsno7x0bgjrnRNw79XOhh-hobp7zdbyAyQFH8TztxhUpKgQQdQb"));
     driver.navigate().refresh();
-    driver.close();
+//    driver.close();
+    System.out.println(driver.manage().getCookies());
 
   }
 
